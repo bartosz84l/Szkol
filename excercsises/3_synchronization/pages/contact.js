@@ -14,6 +14,10 @@ var Contact = function() {
     this.menuItems.get(idx).click();
   };
 
+  this.clickSubmit = function(){
+    this.element(by.css(button[type = 'submit'])).click();
+  }
+
 };
 
 module.exports = new Contact();
